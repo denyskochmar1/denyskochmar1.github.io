@@ -30,6 +30,25 @@
         .dacha .inner.green {
             fill: green;
         }
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+        .arrow:hover {
+            animation: myAnim 2s ease 0s infinite normal forwards;
+        }
+
+        @keyframes myAnim {
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -604,8 +623,8 @@
               </g>
               <text fill="#000000" font-family="Serif" font-size="24" id="svg_182" stroke="#000000" stroke-width="0" text-anchor="middle" x="339" xml:space="preserve" y="967">80</text>
              </g>
-             <line fill="none" id="svg_2" marker-end="url(#mkr_end_svg_2)" stroke="#000000" stroke-linecap="round" stroke-width="5" transform="rotate(2.29061 265 709.5)" x1="214" x2="316" y1="709.5" y2="709.5"/>
-             <line fill="none" id="svg_8" marker-end="url(#mkr_end_svg_8)" stroke="#000000" stroke-linecap="round" stroke-width="5" transform="rotate(2.29061 60 983)" x1="9" x2="111" y1="983" y2="983"/>
+             <line class="arrow" fill="none" id="svg_2" marker-end="url(#mkr_end_svg_2)" stroke="#000000" stroke-linecap="round" stroke-width="5" transform="rotate(2.29061 265 709.5)" x1="214" x2="316" y1="709.5" y2="709.5"/>
+             <line class="arrow" fill="none" id="svg_8" marker-end="url(#mkr_end_svg_8)" stroke="#000000" stroke-linecap="round" stroke-width="5" transform="rotate(2.29061 60 983)" x1="9" x2="111" y1="983" y2="983"/>
              <text fill="#000000" font-family="Serif" font-size="24" id="svg_9" stroke="#000000" stroke-linecap="round" stroke-width="0" text-anchor="middle" transform="rotate(1.58017 259 680.75)" x="259" xml:space="preserve" y="688.5">Ворота</text>
              <text fill="#000000" font-family="Serif" font-size="24" id="svg_10" stroke="#000000" stroke-linecap="round" stroke-width="0" text-anchor="middle" transform="rotate(1.58017 57 955.75)" x="57" xml:space="preserve" y="963.5">Дріт</text>
             </g>
